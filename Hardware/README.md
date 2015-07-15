@@ -7,15 +7,15 @@ This board is intended to be a termination block, i.e., there is no bottom Hiros
 
 ## Components ##
 
-| Component 		| Description										|
-| :-----------------|:--------------------------------------------------|
-| USB2512b 			| USB 2.0 High-speed hub w/ 2 downstream ports 		|
-| FT231XS-U 		| USB-to-UART FTDI chip								|
-| TPS62065 			| 2A 3MHz DC-DC step-down converter, set to 4v		|
-| BA33DD0WHFP 		| 3.3v/2A LDO 										|
-| BA15BC0FP 		| 1.5v/1A LDO 										|
-| MAX4995AAUT 		| USB Port Power current limiter IC, set to ~480mA  |
-| BSS138 			| MOSFET to control `DCIN` input to Edison			|
+| Component 		| Description										| Resources                                                                                                  |
+| :-----------------|:--------------------------------------------------| -----------------------------------------------------------------------------------------------------------|
+| USB2512b 			| USB 2.0 High-speed hub w/ 2 downstream ports 		| [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/00001692.pdf)
+| FT231XS-U 		| USB-to-UART FTDI chip								| [Datasheet](http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf)
+| TPS62065 			| 2A 3MHz DC-DC step-down converter, set to 4v		| [Datasheet](http://www.ti.com/lit/ds/symlink/tps62065.pdf)
+| BA33DD0WHFP 		| 3.3v/2A LDO 										| [Datasheet](http://rohmfs.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/baxxdd0-e.pdf)
+| BA15BC0FP 		| 1.5v/1A LDO 										| [Datasheet](http://www.mouser.com/ds/2/348/baxxbc0fp-e-209385.pdf)
+| MAX4995AAUT 		| USB Port Power current limiter IC, set to ~480mA  | [Datasheet](http://datasheets.maximintegrated.com/en/ds/MAX4995A-MAX4995C.pdf)
+| BSS138 			| MOSFET to control `DCIN` input to Edison			| [Datasheet](https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf)
 
 ## Power Requirements ##
 
@@ -41,3 +41,14 @@ Consider using a [y-cable](http://www.amazon.com/StarTech-3-Feet-Cable-External-
 #### Current Spikes ####
 
 Because many devices that would be insterted into the mini PCI-express slot can experience up to 2A transient current spikes, a tantalum 470uF capacitor is placed near the 3.3v power supply.
+
+---------------------------------------
+
+## Resources ##
+
+| Item                     | Description                     | Resource
+| :----------------------- |:--------------------------------|:--------------------------
+| SparkFun Base Block      | Power and FTDI example          | [Schematic](https://cdn.sparkfun.com/datasheets/Dev/Edison/Base_Block.pdf)
+| USBMA Wireless Adapter   | mPCIe, power, SIM, example		 | [Schematic](http://www.hwtools.net/PDF/USBMA_ver1.2f_schematic.pdf)
+| USB2514b Dev Board       | Example of USB2512b IC          | [Schematic](http://ww1.microchip.com/downloads/en/DeviceDoc/evb2514qfn48.pdf)
+| USB2514b Dev Board       | Parts List                      | [BOM](http://ww1.microchip.com/downloads/en/DeviceDoc/evb2514qfn48bom.pdf)
