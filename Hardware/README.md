@@ -15,7 +15,7 @@ This board is intended to be a termination block, i.e., there is no bottom Hiros
 | BA33DD0WHFP 		| 3.3v/2A LDO 										|
 | BA15BC0FP 		| 1.5v/1A LDO 										|
 | MAX4995AAUT 		| USB Port Power current limiter IC, set to ~480mA  |
-| BSS138 			| MOSFET to control DCIN input to Edison			|
+| BSS138 			| MOSFET to control `DCIN` input to Edison			|
 
 ## Power Requirements ##
 
@@ -35,6 +35,8 @@ Power comes into the block through the USB MicroB (JP1) console port. This volta
 `VSYS` also feeds a 3.3v/2A LDO and an optional 1.5v/1A LDO. These LDOs power the mini PCI-express card.
 
 The downstream USB is powered directly by the USB-to-UART's `USB_VBUS` pin. It is current limited by the MAX4995AAUT IC to ~480mA.
+
+Consider using a [y-cable](http://www.amazon.com/StarTech-3-Feet-Cable-External-Drive/dp/B0047AALS0) to provide power and the console when using a computer.
 
 #### Current Spikes ####
 
