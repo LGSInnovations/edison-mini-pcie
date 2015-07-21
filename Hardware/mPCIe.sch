@@ -10839,7 +10839,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="" value="1.0uH"/>
+<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R0402" value="680K"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0402" value="120K"/>
 <part name="C2" library="rcl" deviceset="C-US" device="C0402K" value="47pF"/>
